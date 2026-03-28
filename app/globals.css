@@ -1,0 +1,81 @@
+:root {
+  --bg: #f2f7fb;
+  --surface: #ffffff;
+  --line: #d7e3ef;
+  --text: #0d1b2a;
+  --muted: #4a6075;
+  --brand: #1b4965;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", "Trebuchet MS", sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(circle at 12% 6%, #d6eeff, transparent 28%),
+    radial-gradient(circle at 92% 0%, #c8eee9, transparent 22%),
+    var(--bg);
+}
+
+a {
+  color: inherit;
+}
+
+.page {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 1.25rem;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.brand {
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.auth {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.hero {
+  background: linear-gradient(135deg, #0f1729, #1b4965 60%, #4f9ac8);
+  color: #f3faff;
+  border-radius: 16px;
+  padding: 1.4rem;
+  box-shadow: 0 14px 34px rgba(13, 27, 42, 0.24);
+}
+
+.hero h1 {
+  margin: 0 0 0.45rem;
+}
+
+.hero p {
+  margin: 0;
+  color: #dbeefe;
+}
+
+.card {
+  margin-top: 1rem;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  border-radius: 14px;
+  padding: 1rem;
+  box-shadow: 0 8px 20px rgba(0, 24, 51, 0.06);
+}
+
+.muted {
+  color: var(--muted);
+}
